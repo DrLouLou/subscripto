@@ -101,6 +101,17 @@
           </div>
           <% @subscriptions.each do |subscription| %>
           <div class="subscription-card">
+            <div>
+              <% result = subscription.renewal_date - Date.today %>
+              <% days = result.to_i %>
+              <% if days < 7 %>
+                <div class="red-status"></div>
+              <% elsif days > 7 && days < 14 %>
+                <div class="yellow-status"></div>
+              <% else %>
+                <div class="green-status"></div>
+             <% end %>
+            </div>
             <div class="subscription-card-info">
               <h2><%= subscription.title %></h2>
               <% date1 = subscription.creation_date %>
@@ -112,6 +123,7 @@
               <% months = (date2.year * 12 + date2.month) - (date1.year * 12 + date1.month) %>
               <p> Time:<%= months / 12 %> Years <%= months % 12 %> Months </p>
             </div>
+
             <h2 class="card-trip-pricing">Price: £<%= subscription.price %></h2>
             <img src="https://logo.clearbit.com/<%= subscription.title.split(' ').first.downcase %>.com" class="card-trip-user">
             <button class="manage-button">

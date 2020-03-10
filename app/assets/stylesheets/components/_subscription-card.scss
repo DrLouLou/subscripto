@@ -2,15 +2,10 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  //   background-color: white;
-  // height: 120px;
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  // overflow: hidden;
   margin: 0px 0 10px 0;
-  // border-radius: 7px;
   position: relative;
   border-radius: 7px;
-  // width: 98%;
+  display: flex;
 }
 
 .card-trip-pricing {
@@ -31,33 +26,6 @@
     margin: 10px 0;
     color: #234B8B;
   }
-  // h2 {
-  //   margin: 10px 0;
-  // }
-}
-
-// .subscription-card-info h2 {
-//   font-size: 16px;
-//   font-weight: bold;
-//   position: absolute;
-//   left: 70px;
-//   top: 20px;
-// }
-
-.subscription-card-info p {
-//   font-size: 12px;
-//   opacity: .7;
-//   bottom: 10px;
-  // left: 10px;
-// padding: 0px;
-}
-
-
-.subscription-card-info {
-  // padding: 16px;
-  // display: flex;
-  // flex-direction: column;
-  // position: relative;
 }
 
 .card-trip-user {
@@ -114,40 +82,25 @@
   font-size: 20px;
 }
 
+.red-status {
+  background-color: red;
 
+  height: 50px;
+  width: 10px;
 
+}
 
-// .subscription-card h2 {
-//   font-size: 16px;
-//   font-weight: bold;
-//   margin: 10px;
-// }
+.yellow-status {
+  background-color: yellow;
 
-// .subscription-card p {
-//   font-size: 12px;
-//   opacity: .7;
-//   margin: 10px;
-// }
+  height: 50px;
+  width: 10px;
+}
 
-// .subscription-card-info {
-//    padding: 16px;
-//   display: flex;
-//   align-items: flex-start;
-//   bottom: 0px;
-//   position: relative;
-// }
+.green-status {
+  background-color: green;
 
-// .card-trip-user {
-//   position: absolute;
-//   width: 40px;
-//   top: 584px;
-//   // margin: 10px;
-// }
-
-// .card-trip-pricing {
-//   position: absolute;
-//   // top: 10px;
-//   right: 180px;
-//   margin: 30px;
-// }
+  height: 50px;
+  width: 10px;
+}
 
